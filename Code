@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tumor Detection Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fc;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .results img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 10px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .results img {
+  max-width: 70%;   /* reduce image size to 70% of container */
+  border-radius: 12px;
+  margin: 15px auto;
+  display: block;   /* center the images */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tumor Detection Project</h1>
+    <p>MATLAB + Medical Imaging | Hackathon Showcase</p>
+  </header>
+
+  <section>
+    <h2>About This Project</h2>
+    <p>
+      This project focuses on detecting tumors in MRI scans using MATLAB.
+      It highlights high-intensity regions, provides tumor staging, and
+      improves accessibility with text-to-speech support for visually
+      impaired users.
+    </p>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Tumor Detection</h3>
+        <p>Detects bright intensity tumor regions using image processing.</p>
+      </div>
+      <div class="card">
+        <h3>Comparision</h3>
+        <p>Classifies tumor stage based on area and pixel intensity.</p>
+      </div>
+      <div class="card">
+        <h3>Accessibility</h3>
+        <p>Text-to-speech support for visually impaired users.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="results">
+    <h2>Sample Results</h2>
+    <img src="heatmap.png" alt="Tumor Detection Heatmap">
+    <img src="comparision.png" alt="Tumor Detection Comparision">
+  </section>
+
+  <footer>
+    © 2025 Your Name | Built with HTML & CSS
+  </footer>
+</body>
+</html>
